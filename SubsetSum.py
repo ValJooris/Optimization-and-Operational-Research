@@ -56,3 +56,5 @@ generateSubsets(weights, size, target)
 print("Nodes generated ",total_nodes)
 
 # This code is contributed by hardikkhushwaha
+
+
