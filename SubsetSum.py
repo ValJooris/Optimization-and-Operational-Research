@@ -1,4 +1,5 @@
 from typing import List
+import time
 
 startime = time.time()
 
@@ -58,7 +59,8 @@ generateSubsets(weights, size, target)
 print("Nodes generated ",total_nodes)
 
 duration = time.time() - startime
-print(duration)
+print(f"running the code takes : {duration} seconds")
+
 
 # This code is contributed by hardikkhushwaha
 
