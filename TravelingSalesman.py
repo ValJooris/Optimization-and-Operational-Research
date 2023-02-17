@@ -3,8 +3,8 @@
 from sys import maxsize
 from itertools import permutations
 import time
+import matplotlib.pyplot as plt
 
-startime = time.time()
 
 V = 4
 
@@ -45,7 +45,11 @@ if __name__ == "__main__":
 	graph = [[0, 10, 15, 20], [10, 0, 35, 25],
 			[15, 35, 0, 30], [20, 25, 30, 0]]
 	s = 0
+	
+	startime = time.time()
+
 	print(travellingSalesmanProblem(graph, s))
 	
-duration = time.time()-startime
-print(f"running the code takes : {duration} seconds")
+	duration = time.time()-startime
+	
+	plt.plot(duration, len(graph))
