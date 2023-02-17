@@ -2,6 +2,7 @@
 # problem using naive approach.
 from sys import maxsize
 from itertools import permutations
+import time
 
 startime = time.time()
 
@@ -47,4 +48,4 @@ if __name__ == "__main__":
 	print(travellingSalesmanProblem(graph, s))
 	
 duration = time.time()-startime
-print(duration)
+print(f"running the code takes : {duration} seconds")
