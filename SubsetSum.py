@@ -1,5 +1,7 @@
 from typing import List
 
+startime = time.time()
+
 total_nodes = 0
 
 # prints subset found
@@ -55,6 +57,9 @@ size = len(weights)
 generateSubsets(weights, size, target)
 print("Nodes generated ",total_nodes)
 
+duration = time.time() - startime
+
 # This code is contributed by hardikkhushwaha
 
 
+	
