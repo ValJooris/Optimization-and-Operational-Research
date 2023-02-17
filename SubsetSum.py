@@ -1,7 +1,8 @@
 from typing import List
 import time
+import matplotlib.pyplot as plt
 
-startime = time.time()
+
 
 total_nodes = 0
 
@@ -55,14 +56,17 @@ def generateSubsets(s:List[int], size:int, target_sum:int)->None:
 weights = [15, 22, 14, 26, 32, 9, 16, 8]
 target = 53
 size = len(weights)
+
+startime = time.time()
+
 generateSubsets(weights, size, target)
-print("Nodes generated ",total_nodes)
 
 duration = time.time() - startime
+
+print("Nodes generated ",total_nodes)
+
 print(f"running the code takes : {duration} seconds")
 
+plt.plot(size, duration)
 
 # This code is contributed by hardikkhushwaha
-
-
-	
