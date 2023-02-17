@@ -2,6 +2,9 @@
 # problem using naive approach.
 from sys import maxsize
 from itertools import permutations
+
+startime = time.time()
+
 V = 4
 
 # implementation of traveling Salesman Problem
@@ -42,3 +45,6 @@ if __name__ == "__main__":
 			[15, 35, 0, 30], [20, 25, 30, 0]]
 	s = 0
 	print(travellingSalesmanProblem(graph, s))
+	
+duration = time.time()-startime
+print(duration)
