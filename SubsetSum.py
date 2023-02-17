@@ -58,6 +58,7 @@ generateSubsets(weights, size, target)
 print("Nodes generated ",total_nodes)
 
 duration = time.time() - startime
+print(duration)
 
 # This code is contributed by hardikkhushwaha
 
