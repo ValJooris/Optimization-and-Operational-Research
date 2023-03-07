@@ -67,6 +67,7 @@ print("Nodes generated ",total_nodes)
 
 print(f"running the code takes : {duration} seconds")
 
+# JVF: not plot generated
 plt.plot(size, duration)
 
 # This code is contributed by hardikkhushwaha
