@@ -52,4 +52,6 @@ if __name__ == "__main__":
 	
 	duration = time.time()-startime
 	
+# JVF: not plot generated
+
 	plt.plot(duration, len(graph))
